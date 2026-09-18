@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>B001 - MediCare Hospital</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 35px; color: #163b5c; }
+.header { border-bottom: 3px solid #087ac1; padding-bottom: 12px; }
+.logo { color: #087ac1; font-size: 30px; font-weight: bold; }
+.tag { color: #55758f; }
+h2 { color: #0b4b82; }
+.info { background:#f1f8fd; padding:14px; margin-top:18px; }
+table { width:100%; border-collapse:collapse; margin-top:18px; }
+th, td { border:1px solid #c8dce9; padding:10px; text-align:left; }
+th { background:#e8f4fb; }
+.amount { text-align:right; }
+.total { font-weight:bold; font-size:18px; }
+.status { font-weight:bold; }
+.footer { margin-top:35px; color:#688196; font-size:12px; }
+.print { margin-bottom:20px; padding:10px 18px; background:#087ac1; color:white;
+          border:0; cursor:pointer; }
+@media print { .print { display:none; } body { margin:15px; } }
+</style>
+</head>
+<body>
+<button class="print" onclick="window.print()">🖨 Print Bill</button>
+<div class="header">
+  <div class="logo">♥ MediCare Hospital</div>
+  <div class="tag">Compassion • Care • Better Health</div>
+</div>
+<h2>Patient Bill</h2>
+<div class="info">
+<b>Bill ID:</b> B001<br>
+<b>Date:</b> 18-09-2026 07:33 PM<br>
+<b>Patient ID:</b> P001<br>
+<b>Patient Name:</b> maya<br>
+<b>Age:</b> 45 &nbsp;&nbsp;
+<b>Gender:</b> Female<br>
+<b>Phone:</b> 1234567891
+</div>
+<table>
+<tr><th>Particular</th><th class="amount">Amount (₹)</th></tr>
+<tr><td>Consultation Fee</td><td class="amount">500.00</td></tr>
+<tr><td>Room Charges</td><td class="amount">1,000.00</td></tr>
+<tr><td>Medicine Charges</td><td class="amount">4,000.00</td></tr>
+<tr><td>Lab Charges</td><td class="amount">1,000.00</td></tr>
+<tr><td>Other Charges</td><td class="amount">100.00</td></tr>
+<tr class="total"><td>Total Amount</td><td class="amount">6,600.00</td></tr>
+<tr><td>Paid Amount</td><td class="amount">6,000.00</td></tr>
+<tr><td>Pending Amount</td><td class="amount">600.00</td></tr>
+<tr><td class="status">Status</td><td class="status">Pending</td></tr>
+</table>
+<div class="footer">
+Thank you for choosing MediCare Hospital.<br>
+This is a computer-generated bill.
+</div>
+</body>
+</html>
